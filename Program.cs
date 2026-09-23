@@ -1,57 +1,63 @@
 namespace KingsQuest;
 
-using System.Collections;
-internal class Program
+public class Program
 {
+
+	private static LinkManager lm = new LinkManager();
+	private static Room throneRoom = new Room("Throne Room", "A grand room with a large throne at the end. The king is sitting on the throne with the princess by his side");
+	private static Room dungeon = new Room("Dragon Lair", "A dark and damp room with a dragon sleeping in the corner");
+	private static Room armory = new Room("Armory", "A room filled with weapons and armor");
+
+
 	public static void Main(string[] args)
 	{
-		Room throneRoom = new Room("Throne Room", "The grand throne room of the castle. The King is sitting on his trone with the princess by his side");
-		Room dragonLair = new Room("Dragon's Lair", "A dark and ominous cave where the dragon sleeps. The air is thick with smoke and the smell of sulfur.");
-		Room armory = new Room("Armory", "A guard stands in the room. It's filled with weapons and armor. The walls are lined with racks of swords, shields, and suits of armor.");
+		LinkManager linkManager = new LinkManager();
+		linkManager.AddLink(new Link(throneRoom, dungeon));
+		linkManager.AddLink(new Link(throneRoom, armory));
 
-		throneRoom.setNextDoorRoom(0, armory);
-		throneRoom.setNextDoorRoom(1, dragonLair);
+		lm = linkManager;
 
-		ArrayList directions = new ArrayList();
+		// lm.AddLink(new Link(throneRoom, dungeon));
+		// lm.AddLink(new Link(throneRoom, armory));
+
+		gameLoop();
+
+	}
+
+	private static void gameLoop()
+	{
 		Room currentRoom = throneRoom;
+		List<Room> availableRooms = new List<Room>();
+		string input = "";
 		while (true)
 		{
+			Console.WriteLine("You are in the " + currentRoom);
+			Console.WriteLine("Where would you like to go?");
+			availableRooms = lm.GetNextDoorRooms(currentRoom);
 
-			for (int i = 0; i < 4; i++)
+			foreach (Room room in availableRooms)
 			{
-				if (currentRoom.getNextDoorRoom(i) != null)
-				{
-					directions.Add(currentRoom.getNextDoorRoom(i));
-				}
-
+				Console.WriteLine(room.getName);
 			}
 
-			Console.WriteLine(currentRoom);
-			Console.WriteLine("Where would you like to go? (left, right, up, down)");
-
-			for (int i = 0; i < directions.Count; i++)
+			input = Console.ReadLine().ToLower();
+			foreach (Room room in availableRooms)
 			{
-				Console.WriteLine($"{i + 1}. {((Room)directions[i]).Name}");
-			}
-
-			string input = Console.ReadLine().ToLower();
-
-			for (int i = 0; i < directions.Count; i++)
-			{
-				if (input.Equals(((Room)directions[i]).Name.ToLower()))
+				if (room.getName.ToLower() == input)
 				{
-					currentRoom = (Room)directions[i];
+					currentRoom = room;
 					break;
 				}
 			}
 
+			availableRooms.Clear();
 
-			directions.Clear();
 
-			if (input.Equals("quit"))
+			if (input == "exit")
 			{
-				break;
+				return;
 			}
 		}
 	}
+
 }
