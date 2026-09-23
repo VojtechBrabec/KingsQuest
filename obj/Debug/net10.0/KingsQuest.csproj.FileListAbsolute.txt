@@ -1,0 +1,15 @@
+d:\vscode projects\C#\KingsQuest\KingsQuest\bin\Debug\net10.0\KingsQuest.exe
+d:\vscode projects\C#\KingsQuest\KingsQuest\bin\Debug\net10.0\KingsQuest.deps.json
+d:\vscode projects\C#\KingsQuest\KingsQuest\bin\Debug\net10.0\KingsQuest.runtimeconfig.json
+d:\vscode projects\C#\KingsQuest\KingsQuest\bin\Debug\net10.0\KingsQuest.dll
+d:\vscode projects\C#\KingsQuest\KingsQuest\bin\Debug\net10.0\KingsQuest.pdb
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\KingsQuest.GeneratedMSBuildEditorConfig.editorconfig
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\KingsQuest.AssemblyInfoInputs.cache
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\KingsQuest.AssemblyInfo.cs
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\KingsQuest.csproj.CoreCompileInputs.cache
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\KingsQuest.sourcelink.json
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\KingsQuest.dll
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\refint\KingsQuest.dll
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\KingsQuest.pdb
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\KingsQuest.genruntimeconfig.cache
+d:\vscode projects\C#\KingsQuest\KingsQuest\obj\Debug\net10.0\ref\KingsQuest.dll

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KingsQuest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f69c3374e32d5ac8558b258e80b178ace0861e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("KingsQuest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KingsQuest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
