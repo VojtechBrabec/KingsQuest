@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj": {}
+    "D:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj": {}
   },
   "projects": {
-    "d:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj": {
+    "D:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj",
+        "projectUniqueName": "D:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj",
         "projectName": "KingsQuest",
-        "projectPath": "d:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj",
+        "projectPath": "D:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj",
         "packagesPath": "C:\\Users\\Vojtěch Brabec\\.nuget\\packages\\",
-        "outputPath": "d:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\obj\\",
+        "outputPath": "D:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vojtěch Brabec\\AppData\\Roaming\\NuGet\\NuGet.Config"

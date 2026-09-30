@@ -1,4 +1,4 @@
-namespace KingsQuest;
+﻿namespace KingsQuest;
 
 public class Program
 {
@@ -12,6 +12,7 @@ public class Program
 	private static Character princess = new Character("Princess");
 	private static Character dragon = new Character("Dragon");
 	private static Character guard = new Character("Guard");
+
 
 
 	private static void setUp()
@@ -77,6 +78,8 @@ public class Program
 			}
 
 			input = Console.ReadLine().ToLower();
+			Console.Clear();
+
 
 			// Console.WriteLine("\n\n");
 			if (input.StartsWith("talk-to"))
@@ -89,12 +92,12 @@ public class Program
 			}
 
 			availableRooms.Clear();
-			// Console.Clear();
-			input = "";
+			// Console.WriteLine("clear was here");
 
 			if (input == "help")
 			{
 				help();
+				Console.Clear();
 			}
 
 			if (input == "exit")
