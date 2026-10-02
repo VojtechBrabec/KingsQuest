@@ -1,51 +1,64 @@
 namespace KingsQuest;
 
-internal class Room
+public class Room
 {
+	private string name;
+	private string description;
 
+	private List<Character> characters = new List<Character>();
 
-	//0 left, 1 right, 2 up, 3 down
-	private Room[] nextDoorRooms = new Room[4];
-	public string Name { get; set; }
-	public string Description { get; set; }
+	public Room(string name)
+	{
+		this.name = name;
+	}
+
 	public Room(string name, string description)
 	{
-		Name = name;
-		Description = description;
+		this.name = name;
+		this.description = description;
 	}
 
 
-	internal void setNextDoorRoom(int direction, Room room)
+	public string getName
 	{
-		if (nextDoorRooms[direction] != null)
+		get { return name; }
+	}
+	public string getDescription
+	{
+		get { return description; }
+	}
+
+	public List<Character> getCharacters
+	{
+		get { return characters; }
+	}
+
+	public Character? getCharacter(string name)
+	{
+
+		name = name.ToLower();
+		foreach (Character c in characters)
+		{
+			if (c.getName().ToLower() == name)
+			{
+				return c;
+			}
+		}
+		return null;
+	}
+
+	public void addCharacter(Character character)
+	{
+		if (character == null || characters.Contains(character))
 		{
 			return;
 		}
-		nextDoorRooms[direction] = room;
-		switch (direction)
-		{
-			case 0:
-				room.setNextDoorRoom(1, this);
-				break;
-			case 1:
-				room.setNextDoorRoom(0, this);
-				break;
-			case 2:
-				room.setNextDoorRoom(3, this);
-				break;
-			case 3:
-				room.setNextDoorRoom(2, this);
-				break;
-		}
-	}
-
-	internal Room getNextDoorRoom(int direction)
-	{
-		return nextDoorRooms[direction];
+		characters.Add(character);
 	}
 
 	public override string ToString()
 	{
-		return $"{Name}\n{Description}";
+		return name + ":\n" + description;
 	}
+
 }

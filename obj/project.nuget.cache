@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WiUhGY5y6wI=",
+  "dgSpecHash": "3gBVn5fH3O8=",
   "success": true,
-  "projectFilePath": "D:\\vscode projects\\C#\\KingsQuest\\KingsQuest\\KingsQuest.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/runner/work/KingsQuest/KingsQuest/KingsQuest.csproj",
+  "expectedPackageFiles": [
+    "/tmp/codeql-scratch-985aae8a27d72982/dbs/csharp/working/packages/microsoft.netcore.app.ref/10.0.12/microsoft.netcore.app.ref.10.0.12.nupkg.sha512",
+    "/tmp/codeql-scratch-985aae8a27d72982/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512",
+    "/tmp/codeql-scratch-985aae8a27d72982/dbs/csharp/working/packages/microsoft.netcore.app.host.linux-x64/10.0.12/microsoft.netcore.app.host.linux-x64.10.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
